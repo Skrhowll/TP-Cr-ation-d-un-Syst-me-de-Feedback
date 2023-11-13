@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <h1>Feedback</h1>
+{% endblock %}
+
+{% block body %}
+    <div class="customer-info">
+        <p><strong>Nom:</strong> {{ Nom }}</p>
+        <p><strong>Email:</strong> {{ EmailClient }}</p>
+        <p><strong>Note du Produit:</strong> {{ NoteDuProduit }}</p>
+        <p><strong>Commentaires:</strong> {{ Commentaires }}</p>
+        <p>
+            <strong>Date de Soumission:</strong>
+            {{ DateDeSoumission.day }} / {{ DateDeSoumission.month }} / {{ DateDeSoumission.year }}
+        </p>
+    </div>
+{% endblock %}

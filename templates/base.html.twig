@@ -1,0 +1,23 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<header>
+    <h1></h1>
+</header>
+<div>
+    {% block body %}{% endblock %}
+</div>
+<footer>
+    <p>By MASOUA Wilfried</p>
+</footer>
+</body>
+</html>
